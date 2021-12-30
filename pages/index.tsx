@@ -58,8 +58,8 @@ export default function Home({
         ))}
       </Marquee>
       <Hero
-        headline=" Dessert dragée halvah croissant."
-        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake. "
+        headline=" Ethiopian cloth store."
+        description="Find ethnic clothes at discount prices just at Ethiopian Cloth Store. Discover the latest fashion trends. Shop the new collection of clothing, footwear, accessories, beauty products and more. Order today from our store. "
       />
       <Grid layout="B" variant="filled">
         {products.slice(0, 3).map((product: any, i: number) => (
