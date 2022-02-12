@@ -27,7 +27,8 @@ const CartSidebarView: FC = () => {
     }
   )
   const handleClose = () => closeSidebar()
-  const goToCheckout = () => setSidebarView('CHECKOUT_VIEW')
+  // const goToCheckout = () => setSidebarView('CHECKOUT_VIEW')
+  const goToCheckoutSemuny = () => setSidebarView('')
 
   const error = null
   const success = null
@@ -111,13 +112,14 @@ const CartSidebarView: FC = () => {
               <span>{total}</span>
             </div>
             <div>
-              {process.env.COMMERCE_CUSTOMCHECKOUT_ENABLED ? (
-                <Button Component="a" width="100%" onClick={goToCheckout}>
-                  Proceed to Checkout ({total})
+              {/* {process.env.COMMERCE_CUSTOMCHECKOUT_ENABLED ? ( */}
+                 {true ? ( 
+                <Button Component="a" width="100%" onClick={goToCheckoutSemuny}>
+                  Proceed to Checkout with semuny for : ({total})
                 </Button>
               ) : (
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout
+                  Proceed to Checkout with semuny
                 </Button>
               )}
             </div>
